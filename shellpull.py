@@ -15,6 +15,8 @@ class bcolors:
 # ip a show tun0 | grep -qoE "10\.(2|4|6|8|9|11)\.[0-9]{1,3}\.[0-9]{1,3}" | head -1
 # ip a show tun0
 
+# ip address | grep -sw "inet" | cut -d " " -f 6 | grep 10.*
+
 # Getting the tun0
 def pull_tun0():
     osout  = str(os.popen("ip a show tun0").read())
