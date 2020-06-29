@@ -1,6 +1,6 @@
 # Reverse-shells
-Automatically appends your `tun0` to a list of reverse shells. 
-Automatically set up nc listener
+* Automatically appends your `tun0` to a list of reverse shells. 
+* Set up nc listener
 
 # Usage 
 - `./revshells.py -l [Language] -p [1-9999]` - output for a specific position
