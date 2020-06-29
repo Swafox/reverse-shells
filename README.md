@@ -1,9 +1,9 @@
 # Reverse-shells
 Automatically appends your `tun0` to a list of reverse shells. 
+Automatically set up nc listener
 
 # Usage 
-- `./revshells.py` - output the whole list
-- `./revshells.py [Language]` - output for a specific position
+- `./revshells.py -l [Language] -p [1-9999]` - output for a specific position
 
 # Setup Ideas
 It is possble to make this script a part of your bash alias or even include it in `/bin/` to make it an executable command.
