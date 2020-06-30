@@ -3,7 +3,8 @@
 * Set up nc listener
 
 # Usage 
-- `./revshells.py -l [Language] -p [1-9999]` - output for a specific position
+- `./revshells.py -l [Language] -p [1-9999]` 
+- Language: Bash, Perl, PHP, Python, Ruby, Netcat
 
 # Setup Ideas
 It is possble to make this script a part of your bash alias or even include it in `/bin/` to make it an executable command.
