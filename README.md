@@ -1,9 +1,9 @@
 # Reverse-shells
-* Automatically appends your `tun0` to a list of reverse shells. 
+* Automatically appends your `tun0` to a list of reverse shells (Port 1234). 
 * Set up nc listener
 
 # Usage 
-- `./revshells.py -l [Language] -p [1-9999]` 
+- `./revshells.py -l [Language]` 
 - Language: Bash, Perl, PHP, Python, Ruby, Netcat
 
 # Setup Ideas
